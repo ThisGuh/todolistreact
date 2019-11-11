@@ -1,0 +1,7 @@
+.addForm{
+    display: flex;
+    justify-content: center;
+}
+.addForm>*{
+    margin-left:10px;
+}

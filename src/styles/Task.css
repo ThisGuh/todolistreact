@@ -1,0 +1,7 @@
+.task{
+    display: flex;
+    flex-direction: row;
+}
+.task button{
+    margin-left: 10px;
+}
