@@ -3,7 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    background-image: linear-gradient(to right,#0F2027,#203A43,#2C5364);
+    overflow-x: hidden;
+}
  .App h1{
     text-align: center;
+    color: #d3dbe8;
+    text-shadow: 4px 2px 8px #000000;
+    margin:30px 0;
 }

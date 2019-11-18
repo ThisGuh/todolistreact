@@ -16,7 +16,6 @@ const TaskList = (props) => {
                 <h1>Tasks to be done</h1>
                 {activeTasks.length > 0 ? activeTasks : <p>Nothing to do :)</p>}
             </div>
-            <hr />
             <div className="doneTasks">
                 <h1>Tasks done <em>({done.length})</em></h1>
                 {doneTasks.slice(0, 5)}

@@ -43,6 +43,7 @@ class App extends React.Component {
     this.setState(prevState => ({
       tasks: [...prevState.tasks, task]
     }))
+    return true;
   }
 
   render() {

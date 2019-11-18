@@ -1,7 +1,41 @@
 .task{
     display: flex;
     flex-direction: row;
+    color: oldlace;
+    text-align: center;
 }
 .task button{
     margin-left: 10px;
+}
+.task>*{
+    margin:3px 0;
+}
+.done{
+    background-color: transparent;
+    outline: none;
+    padding: 2px 8px;
+    border: 2px #5e9cff solid;
+    color:#5e9cff;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+.done:hover{
+    background-color: #5e9cff;
+    color:oldlace;
+}
+.deleteTask{
+    background-color: transparent;
+    outline: none;
+    padding: 2px 8px;
+    border: 2px #b04843 solid;
+    color:#b04843;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+.deleteTask:hover{
+    background-color: #b04843;
+    color: oldlace;
 }

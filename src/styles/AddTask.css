@@ -1,7 +1,75 @@
 .addForm{
     display: flex;
     justify-content: center;
+    color: oldlace;
 }
 .addForm>*{
     margin-left:10px;
 }
+input[type=text]{
+    background-color: transparent;
+    border:none;
+    border-bottom: oldlace 1px solid;
+    color:oldlace;
+    outline: none;
+}
+::placeholder { 
+    color: oldlace;
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+  }
+  input[type=text]:focus{
+      border-bottom: #5e9cff 2px solid;
+  }
+  input[type=text]:focus::placeholder{
+      color:#5e9cff;
+  }
+  #important{
+      display: none;
+  }
+  label[for=important]{
+      user-select: none;
+      cursor: pointer;
+      text-align: center;
+  }
+  label[for=important]::before{
+    content:"\2714";
+    border:1px solid oldlace;
+    border-radius: 4px;
+    display: inline-block;
+    width:20px; 
+    height: 20px;
+    color: transparent;
+    margin-right: 5px;
+    transition: 0.2s;
+  }
+  #important:checked  + label[for=important]::before{
+    color:#5e9cff;
+  }
+  label[for=important]:active::before{
+    transform: scale(0);
+  }
+  .addForm button{
+      border:2px solid #5e9cff;
+      background-color: transparent;
+      color: #5e9cff;
+      padding: 8px 25px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-transform: uppercase;
+      border-radius: 5px;
+      outline: none;
+  }
+  .addForm button:hover{
+      background-color: #5e9cff;
+      color: oldlace;
+  }
+  @media (max-width:700px){
+      .addForm{
+        flex-direction: column;
+        align-items: center;
+      }
+      .addForm>*{
+        margin:8px 0;
+    }
+  }
